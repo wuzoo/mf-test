@@ -7,6 +7,9 @@
     "dev:web1": "turbo run dev --filter=web1",
     "dev:web2": "turbo run dev --filter=web2",
     "build": "turbo run build",
+    "build:host": "pnpm --filter=host build",
+    "build:web1": "pnpm --filter=web1 build",
+    "build:web2": "pnpm --filter=web2 build",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
