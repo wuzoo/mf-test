@@ -1,32 +1,29 @@
-import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <div style={{ width: "100vw", height: "100vh", position: "relative" }}>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          backgroundColor: "white",
+        }}
+      >
+        <p style={{ cursor: "pointer", padding: "10px", color: "black" }}>
+          web1
+        </p>
+        <p style={{ cursor: "pointer", padding: "10px", color: "black" }}>
+          web2
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <section
+        style={{ backgroundColor: "red", width: "100%", height: "100%" }}
+      >
+        <p>this is section for micro apps</p>
+      </section>
+    </div>
   );
 }
 
