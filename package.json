@@ -2,8 +2,11 @@
   "name": "mf-test",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:host": "turbo run dev --filter=host",
+    "dev:web1": "turbo run dev --filter=web1",
+    "dev:web2": "turbo run dev --filter=web2",
+    "build": "turbo run build",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
