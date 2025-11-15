@@ -7,4 +7,7 @@ export default defineConfig({
   server: {
     port: 4002,
   },
+  build: {
+    outDir: "dist",
+  },
 });
